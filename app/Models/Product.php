@@ -15,21 +15,11 @@ class Product extends Model
     protected $fillable = [
         'name',
         'description',
-        'brand_id',
-        'category_id',
+        'brand',
+        'categoryable_id',
         'price_range_min',
         'price_range_max',
     ];
-
-    public function brand(): BelongsTo
-    {
-        return $this->belongsTo(Brand::class);
-    }
-
-    public function categories(): BelongsToMany
-    {
-        return $this->belongsToMany(Category::class);
-    }
 
     public function variants(): HasMany
     {

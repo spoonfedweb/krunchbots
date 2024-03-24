@@ -1,0 +1,57 @@
+.board-d {
+    [class^="c-"] {
+        background: url("../../images/sprites.png");
+    }
+    .c-1 {
+        min-height: 260px;
+        background-position: 49em 62em;
+        width: 12em;
+    }
+    .c-2 {
+        min-height: 260px;
+        background-position: 61em 61em;
+        width: 12.4em;
+    }
+    .c-3 {
+        min-height: 260px;
+        background-position: 27.3em 62em;
+        width: 12.4em;
+    }
+    .c-4 {
+        min-height: 260px;
+        background-position: 15em 62em;
+        width: 11.4em;
+    }
+    .c-5,
+    .predator {
+        height: 18em;
+        background-position: 49.4em 22em;
+        width: 13em;
+    }
+    .c-6 {
+        min-height: 260px;
+        background-position: 61em 41em;
+        width: 12em;
+    }
+    .c-7 {
+        min-height: 260px;
+        background-position: 49.1em 41em;
+        width: 11.8em;
+    }
+    .c-8 {
+        min-height: 260px;
+        background-position: 37.5em 41em;
+        width: 11.4em;
+    }
+    .c-9 {
+        min-height: 260px;
+        background-position: 15.6em 41em;
+        width: 12.4em;
+    }
+    .c-10,
+    .slingerland {
+        height: 18em;
+        background-position: 60.2em 21em;
+        width: 11.1em;
+    }
+}

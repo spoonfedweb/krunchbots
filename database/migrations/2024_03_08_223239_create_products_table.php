@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->foreignId('brand_id')->nullable()->constrained()->onDelete('cascade');
             $table->unsignedInteger('price_range_min')->nullable();
             $table->unsignedInteger('price_range_max')->nullable();
             $table->timestamps();

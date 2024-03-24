@@ -1,3 +1,6 @@
+@import "./sprites/index.css";
+@import "./bg/index.css";
+@import "./fonts/index.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

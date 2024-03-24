@@ -1,0 +1,11 @@
+.main-bg {
+    background-image: linear-gradient(
+            to bottom right,
+            rgba(34, 7, 7, 0.5) 1%,
+            rgba(7, 2, 24, 0.77) 51%,
+            rgba(0, 0, 0, 1)
+        ),
+        url("../images/bg-one.png");
+    background-repeat: no-repeat no-repeat;
+    padding-bottom: 10rem;
+}

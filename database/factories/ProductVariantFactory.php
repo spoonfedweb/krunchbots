@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -22,7 +23,6 @@ class ProductVariantFactory extends Factory
             'description' => $this->faker->word(),
             'price' => $this->faker->randomFloat(2, 10, 100), // Example price
             'sku' => $this->faker->numberBetween(0, 100), // Example quantity
-            'category' => $this->faker->randomElement(['Clothing', 'Electronics', 'Wares', 'Books', 'Sports', 'Food', 'Home', 'Toys', 'Beauty', 'Health', 'Pets']),
         ];
     }
 }
