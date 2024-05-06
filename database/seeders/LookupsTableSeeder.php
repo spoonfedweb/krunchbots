@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use Faker\Core\Uuid;
+use Faker\Provider\Uuid as ProviderUuid;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -119,7 +121,46 @@ class LookupsTableSeeder extends Seeder
                         'value' => 'XXL'
                     ],
                 ])
-            ]
+            ],
+            [
+                'key' => 'experience',
+                'name' => 'Experience',
+                'description' => 'List of experience levels',
+                'data' => json_encode([
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Green', 'value' => 'green'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Yellow', 'value' => 'yellow'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Orange', 'value' => 'orange'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Red', 'value' => 'expert'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Lavender', 'value' => 'demigod'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'Legend', 'value' => 'legend']
+                ])
+            ],
+            [
+                'key' => 'rank',
+                'name' => 'Rank',
+                'description' => 'List of opponents/players possible ranks',
+                'data' => json_encode([
+                    ['key' => ProviderUuid::uuid(), 'name' => 'B', 'value' => 'okay'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'A', 'value' => 'great'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'S', 'value' => 'amazing'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'S1', 'value' => 'S1'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'S2', 'value' => 'S2'],
+                    ['key' => ProviderUuid::uuid(), 'name' => 'S3', 'value' => 'LEGEND'],
+                ])
+            ],
+            [
+                'key' => 'ai',
+                'name' => 'AI',
+                'description' => 'List of opponents possible AI resource',
+                'data' => json_encode([
+                    ['key' => 1, 'name' => 'LangChain', 'value' => 'langchain'],
+                    ['key' => 2, 'name' => 'Gemini', 'value' => 'gemini'],
+                    ['key' => 3, 'name' => 'Groker', 'value' => 'grok'],
+                    ['key' => 4, 'name' => 'ChatGPT', 'value' => 'chatgpt'],
+                    ['key' => 5, 'name' => 'BingAI', 'value' => 'bing'],
+                    ['key' => 6, 'name' => 'MetaAI', 'value' => 'meta'],
+                ])
+            ],
         ]);
     }
 }

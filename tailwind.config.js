@@ -20,6 +20,11 @@ export default {
         'theme-bg': '#2e2e2e',
         'theme-fg': '#83D8DA',
       },
+      backgroundImage: {
+        two: "url('/resources/images/bg-two.png')",
+        three: "url('/resources/images/bg-three.png')",
+        four: "url('/resources/images/bg-four.png')",
+      },
     },
   },
 

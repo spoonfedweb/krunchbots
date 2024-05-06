@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     @vite(['resources/css/app.css'])
@@ -25,7 +26,7 @@
 
     <main>
         {{-- Layer 1 - AI generated background image --}}
-        <div class="main-bg min-h-screen bg-center bg-cover bg-no-repeat">
+        <div class="bg-one main-bg min-h-screen bg-center bg-cover bg-no-repeat">
             <div class="overlay-bg">
                 @if(Route::has('login'))
                     <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
@@ -45,18 +46,20 @@
                     </div>
                 @endif
                 <div class="flex justify-center p-6">
-                    <img src="{{ Vite::asset('resources/images/SPNFDWB.svg') }}"
+                    <img class="object-cover"
+                        src="{{ Vite::asset('resources/images/SPNFDWB.svg') }}"
                         alt="spoonfedweb">
                 </div>
                 <div class="flex flex-col space-y-16 text-yellow-300">
-                    <div class="text-6xl mx-auto pt-16 font-extrabold font-honk">SELECT YOUR CHESS OPPONENT</div>
+                    <div class="md:text-8xl text-6xl text-center pt-16 font-extrabold font-honk px-6">
+                        SELECT YOUR OPPONENT
+                    </div>
                     <div
                         class="ml-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 gap-y-8 board-d min-w-screen ">
-                        <div class="c-1">
+                        <div class="c-1 rounded-lg">
                             <div class="h-full flex flex-col">
                                 <div tabindex="0"
-                                    class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs
-                                    hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse">
+                                    class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse cursor-pointer">
                                     <div>
                                         <p>Name: Block Turret</p>
                                         <p>Experience: Legend </p>
@@ -65,11 +68,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="c-2">
+                        <div class="c-2 rounded-lg">
                             <div class="h-full flex flex-col">
-                                <div tabindex="0"
-                                    class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs
-                                    hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse">
+                                <div tabindex="0" class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs
+                                    hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse
+                                    cursor-pointer">
                                     <div>
                                         <p>Name: Fujia Capicomm</p>
                                         <p>Experience: Legend </p>
@@ -106,7 +109,9 @@
                         </div>
 
                     </div>
-                    <div>02</div>
+                    <div class="flex justify-center">
+                        <h1 class="text-9xl font-jacquard">HELLO WORLD</h1>
+                    </div>
                     <div>03</div>
                     <div>04</div>
                     <div>05</div>

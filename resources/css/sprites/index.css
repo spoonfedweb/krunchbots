@@ -1,6 +1,12 @@
 .board-d {
     [class^="c-"] {
         background: url("../../images/sprites.png");
+        & .border-double {
+            border-color: transparent;
+        }
+        & .border-double:hover {
+            border-color: rgb(224 242 254);
+        }
     }
     .c-1 {
         min-height: 260px;
@@ -12,12 +18,14 @@
         background-position: 61em 61em;
         width: 12.4em;
     }
-    .c-3 {
+    .c-3,
+    .shreder {
         min-height: 260px;
         background-position: 27.3em 62em;
         width: 12.4em;
     }
-    .c-4 {
+    .c-4,
+    .dynamo {
         min-height: 260px;
         background-position: 15em 62em;
         width: 11.4em;

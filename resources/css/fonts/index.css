@@ -6,3 +6,9 @@
     font-style: normal;
     font-variation-settings: "MORF" 15, "SHLN" 50;
 }
+
+.font-jacquard {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,21 @@
+@keyframes hv1 {
+    from {
+        stroke-width: 0;
+    }
+    to {
+        stroke-width: 4em;
+    }
+}
+
+@keyframes hv2 {
+    from {
+        background: linear-gradient(34deg, rgba(14, 24, 249, 90) 70.71%),
+            linear-gradient(214deg, rgba(0, 255, 124, 0) 74%),
+            linear-gradient(45deg, red 0 50%, blue 50% 100%);
+    }
+    to {
+    }
+}
+
+@keyframes hv3 {
+}
