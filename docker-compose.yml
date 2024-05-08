@@ -9,7 +9,7 @@ services:
         extra_hosts:
             - "host.docker.internal:host-gateway"
         ports:
-            # - '${APP_PORT:-80}:80'
+            - "${APP_PORT:-80}:80"
             - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
         environment:
             WWWUSER: "${WWWUSER}"
@@ -100,18 +100,6 @@ services:
             - "/dev/shm:/dev/shm"
         networks:
             - sail
-    caddy:
-        image: caddy:latest
-        restart: unless-stopped
-        ports:
-            - "${APP_PORT:-80}:80"
-            - "443:443"
-        volumes:
-            - "./Caddyfile:/etc/caddy/Caddyfile"
-            - sailcaddy:/data
-            - sailcaddy:/config
-        networks:
-            - sail
 networks:
     sail:
         driver: bridge
@@ -121,6 +109,4 @@ volumes:
     sail-redis:
         driver: local
     sail-meilisearch:
-        driver: local
-    sailcaddy:
         driver: local

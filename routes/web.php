@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/caddy-check', 'App\Http\Controllers\CaddyController@check');
 
 Route::get('/', function () {
     return view('welcome');

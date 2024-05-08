@@ -58,8 +58,9 @@
                         class="ml-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 gap-y-8 board-d min-w-screen ">
                         <div class="c-1 rounded-lg">
                             <div class="h-full flex flex-col">
-                                <div tabindex="0"
-                                    class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse cursor-pointer">
+                                <div tabindex="0" class="text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow c-text-holder text-xs
+                                    hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse
+                                    cursor-pointer">
                                     <div>
                                         <p>Name: Block Turret</p>
                                         <p>Experience: Legend </p>
@@ -70,7 +71,7 @@
                         </div>
                         <div class="c-2 rounded-lg">
                             <div class="h-full flex flex-col">
-                                <div tabindex="0" class="transition-all duration-400 text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow border-double border-sky-100 focus:scale-105 hover:scale-105 border-2 text-xs
+                                <div tabindex="0" class="text-transparent focus:bg-gradient-to-tr hover:bg-gradient-to-tr from-slate-950 grow c-text-holder text-xs
                                     hover:text-emerald-200 focus:text-emerald-200 p-4 font-semibold rounded-md flex flex-col-reverse
                                     cursor-pointer">
                                     <div>
