@@ -1,3 +1,5 @@
+@import "../vars.css";
+
 .font-honk,
 .text-honk {
     font-family: "Honk", system-ui;
@@ -11,4 +13,14 @@
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+.text-gr-rainbow {
+    background-image: var(--gr-rainbow);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(0.5rem 0.5rem 2rem #000);
 }
